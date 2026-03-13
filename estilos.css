@@ -1,0 +1,144 @@
+body{
+    margin:0;
+    padding:0;
+
+    /* imagen de fondo */
+    background-image: url("./Imagenes/kanto-map.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* selector de clase */
+.title{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.5);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* contenedor */
+.container{
+    display: flex;
+}
+
+/* parte izquierda */
+.left{
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+/* imagen pokedex */
+.pokedex{
+    width: 220px;
+}
+
+/* lista pokemon */
+.pokemonList{
+    color: white;
+    margin-top: 20px;
+}
+
+/* enlaces */
+.pokemonList a{
+    color: white;
+    text-decoration: none;
+}
+
+/* hover */
+.pokemonList a:hover{
+    color: yellow;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px){
+
+    .pokedex{
+        width:150px;
+    }
+
+}
+
+
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    margin:0;
+}
+
+/* página pokemon */
+.pokemonPage{
+    background-color:#d9c9b2;
+    padding:40px;
+}
+
+/* título */
+h1{
+    text-align:center;
+}
+
+/* imagen */
+.pokemonImg{
+    width:300px;
+}
+
+/* tipo fuego */
+.fire{
+    background-color:orange;
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.psychic{
+    background-color:purple;
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.dragon{
+    background-color:rgb(5, 69, 1);
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.ghost{
+    background-color:rgb(135, 135, 135);
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+/* descripción */
+.description{
+    max-width:900px;
+    line-height:1.5;
+}
+
+/* botón volver */
+.backButton{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 20px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.backButton:hover{
+    background:#b30000;
+}
+
+/* MEDIA QUERY */
+@media (max-width:768px){
+
+    .pokemonImg{
+        width:180px;
+    }
+
+}
