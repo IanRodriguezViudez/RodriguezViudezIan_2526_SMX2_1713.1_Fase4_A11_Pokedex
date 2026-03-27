@@ -2,57 +2,70 @@ body{
     margin:0;
     padding:0;
 
-    /* imagen de fondo */
-    background-image: url("./Imagenes/kanto-map.jpeg");
+    background-color: #faeacc;
     background-size: cover;
     background-position: center;
 
     font-family: 'Press Start 2P', cursive;
 }
 
-/* selector de clase */
+body.home{
+    background-image: url("./Imagenes/kanto-map.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
 .title{
     text-align: center;
     color: white;
     margin-top: 20px;
     background-color: rgba(0,0,0,0.5);
-    width: 200px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
     border-radius: 10px;
 }
 
-/* contenedor */
+
 .container{
     display: flex;
+    align-items: left;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: left;
+    color: white;
+    text-decoration: none   ;
 }
 
-/* parte izquierda */
+
 .left{
     margin-left: 40px;
     margin-top: 80px;
 }
 
-/* imagen pokedex */
+
 .pokedex{
-    width: 220px;
+    width: 250px;
 }
 
-/* lista pokemon */
-.pokemonList{
-    color: white;
+
+.PuntosLista{
+    color: rgb(255, 253, 253);
     margin-top: 20px;
 }
 
-/* enlaces */
-.pokemonList a{
-    color: white;
+
+.ListaPokemon{
+    color: rgb(255, 254, 254);
     text-decoration: none;
 }
 
-/* hover */
-.pokemonList a:hover{
+
+.ListaPokemon:hover{
     color: yellow;
 }
 
@@ -65,62 +78,72 @@ body{
 
 }
 
-
-
 body{
     font-family: 'Press Start 2P', cursive;
     margin:0;
 }
 
-/* página pokemon */
-.pokemonPage{
-    background-color:#d9c9b2;
+.PaginaPokemon{
+    background-color:#ffe6c3;
     padding:40px;
 }
 
-/* título */
 h1{
     text-align:center;
 }
 
-/* imagen */
-.pokemonImg{
+.ImagenPokemon{
     width:300px;
 }
 
-/* tipo fuego */
-.fire{
-    background-color:orange;
+.roca{
+    background-color:rgb(96, 45, 1);
     padding:5px 10px;
     border-radius:6px;
 }
 
-.psychic{
-    background-color:purple;
+.tierra{
+    background-color:rgba(241, 241, 0, 0.838);
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.lucha{
+    background-color:rgb(255, 55, 0);
     padding:5px 10px;
     border-radius:6px;
 }
 
 .dragon{
-    background-color:rgb(5, 69, 1);
+    background-color:purple;
     padding:5px 10px;
     border-radius:6px;
 }
 
-.ghost{
+.volador{
+    background-color:rgb(11, 128, 0);
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.agua{
+    background-color:rgb(0, 133, 163);
+    padding:5px 10px;
+    border-radius:6px;
+}
+
+.acero{
     background-color:rgb(135, 135, 135);
     padding:5px 10px;
     border-radius:6px;
 }
 
-/* descripción */
-.description{
-    max-width:900px;
+.Descripcion{
+    width:100%;
     line-height:1.5;
 }
 
-/* botón volver */
-.backButton{
+.BotonVolver{
     display:inline-block;
     margin-top:30px;
     padding:12px 20px;
@@ -130,15 +153,50 @@ h1{
     border-radius:6px;
 }
 
-.backButton:hover{
+.BotonVolver:hover{
     background:#b30000;
 }
 
 /* MEDIA QUERY */
 @media (max-width:768px){
 
-    .pokemonImg{
+    .ImagenPokemon{
         width:180px;
     }
 
+}
+
+.evoluciones h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.evolucion-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.evolucion {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.evolucion:hover {
+    transform: scale(1.05);
+}
+
+.ImagenEvolucionada {
+    width: clamp(100px, 15vw, 180px);
+    border-radius: 50%;
+    border: 5px solid white;
+    background: #555;
+    padding: 10px;
+}
+
+.flecha {
+    font-size: 40px;
 }
